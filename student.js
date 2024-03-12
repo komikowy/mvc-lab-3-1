@@ -1,6 +1,14 @@
-// zad1
+//Zad2
 
-const fullName = "Jakub Dyba";
-const studentID = 45244;
+const student = {
+  fullName: "Jakub Dyba",
+  studentID: 45244,
+  getStudentFullName: function() {
+    return this.fullName;
+  },
+  getStudentId: function() {
+    return this.studentID;
+  }
+};
 
-console.log(`My name is ${fullName}. My student ID is ${studentID}`);
+console.log(`My name is ${student.getStudentFullName()}. My student ID is ${student.getStudentId()}`);
